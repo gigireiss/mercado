@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/fundocompras.png);
+    }
+    
+    header {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 203, 227);
+    width: 50vh;
+    height: 8vh;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 3px solid rgb(253, 150, 205);
+  }
+
+  .search-bar img{
+    height: 5vh;
+  }
+
+  input[type="text"] {
+    border: 1px solid rgb(255, 144, 203);
+    border-radius: 50px;
+
+  }
+
+  .carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 203, 227);
+    border-radius: 30px;
+    height: 6vh;
+    width: 3vw;
+    margin: 6px;
+    border: 3px solid rgb(253, 150, 205);
+  }
+  
+  .carrinho img{
+    height: 4vh;
+  }
+
+  .cart-icon {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 187, 223);
+    border-radius: 40px;
+    height: 3vw;
+    width: 8vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart-icon img {
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffffd2;
+  }
+
+  .product-card {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .botao-carrinho {
+    background-color: #8ca9f3;
+    color: white;
+    border-color: white;
+    width: 10vh;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #707070;
+    filter: brightness(0.8);
+
+    transition: 0.2s;
+
+}
+
+.preco_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+  .product-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+  }
+
+  .product-title {
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .fa-star {
+    color: #ccc; /* default color */
+    cursor: pointer; /* change cursor to hand */
+    margin-left: 10px; /* adiciona margem à esquerda */
+  }
+  
+  .fa-star.active {
+    color: #ffd700; /* golden color */
+  }
+
+  .formulario button{
+    background-color: #8ca9f3;
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    border: none;
+    width: 10vh;
+    height: 35px;
+  }
+
+  h1{
+    align-items: center;
+    font-size: 37px;
+    text-shadow:
+    0 4px 0 white;
+  }

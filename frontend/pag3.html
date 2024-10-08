@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imagens/">
+    <link rel="stylesheet" href="pag3.css">
+    <link rel="stylesheet" href="carrinho.html">
+    <title>Brinquedos</title>
+    <script async src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="search-bar">
+            <img src="img/lupa.png" alt="Ícone de lupa">
+            <input type="text" placeholder="O que você está buscando?">
+        </div>
+        <div class="carrinho">
+            <a href="./carrinho.html">
+                <img src="img/cart-frame.png" alt="">
+            </a>
+        </div>
+    </header>
+    <h1>catalogo</h1>
+
+    <div style="display: none; background-color: #fffcfc;" id="informacoes">
+        
+    </div>
+        <div style="border-bottom: dashed 1px gray; padding-bottom: 10px; width: 100%; display: flex; flex-direction: column; align-items: center;"></div>
+        <div class="formulario">
+            <div style="display: none; margin-bottom: 20px;" id="cadastrar_produto">
+                <input type="text" id="title" placeholder="Nome do Produto">
+                <input type="text" id="price" placeholder="Preço do Produto">
+                <input type="file" id="file">
+                <button onclick="cadastrarProduto(event)">Inserir</button>
+            </div>
+
+        </div>
+
+        <div 
+        style="display: grid; grid-template-columns: 120px 120px 120px; grid-template-rows: auto auto auto; column-gap: 1.2rem;" 
+         id="card_produto">
+        </div>
+        <main>
+
+        <div class="product-card">
+            <img src="img/cama.png" alt="Cama alta com gavetas" class="product-image">
+            <h3 class="product-title">Cama alta com gavetas</h3>
+            <div class="preco_botao">
+               <span class="product-price">R$45,55</span>
+               <a href="./carrinho.html">
+                <button class="botao-carrinho" type="button">adicionar</button>
+                <i class="fas fa-star" id="favorite"></i>
+               </a>
+    
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/gato.png" alt="Fantasia de princesa azul para adolescente" class="product-image">
+            <h3 class="product-title">Fantasia de princesa</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$30,50</span>
+                <a href="./carrinho.html">
+                    <button class="botao-carrinho" type="button">adiciona</button>
+                    <i class="fas fa-star" id="favorite"></i>
+                   </a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/boneco.png" alt="Bebê porco espinho de 2 anos" class="product-image">
+            <h3 class="product-title">Bebê porco espinho</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$50,65</span>
+                <a href="./carrinho.html">
+                    <button class="botao-carrinho" type="button">adiciona</button>
+                    <i class="fas fa-star" id="favorite"></i>
+                   </a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/lavanderia.png" alt="Kit lavanderia" class="product-image">
+            <h3 class="product-title">Kit lavanderia</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$60,30</span>
+                <a href="./carrinho.html">
+                    <button class="botao-carrinho" type="button">adiciona</button>
+                    <i class="fas fa-star" id="favorite"></i>
+                   </a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/espelho.png" alt="Penteadeira com espelho" class="product-image">
+            <h3 class="product-title">Penteadeira com espelho</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$55,90</span>
+                <button class="botao-carrinho" type="button">adicionar</button>
+                <i class="fas fa-star" id="favorite"></i>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <img src="img/casa.png" alt="Casa de dois andares com varanda" class="product-image">
+            <h3 class="product-title">Casa de dois andares</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$210,25</span>
+                <button class="botao-carrinho" type="button">adicionar</button>
+                <i class="fas fa-star" id="favorite"></i>
+            </div>
+
+    
+        </div>
+
+        <div class="product-card">
+            <img src="img/girafa.png" alt="Girafa criança" class="product-image">
+            <h3 class="product-title">Girafa criança de 4 anos</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$60,50</span>
+                <button class="botao-carrinho" type="button">adicionar</button>
+                <i class="fas fa-star" id="favorite"></i>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/carro.png" alt="Carro vermelho de 4 lugares" class="product-image">
+            <h3 class="product-title">Carro vermelho de 4 lugares</h3>
+            <div class="preco_botao">
+                <span class="product-price">R$180,85</span>
+                <button class="botao-carrinho"  type="button">adicionar</button>
+                <i class="fas fa-star" id="favorite"></i>
+            </div>
+        </div>
+    </main>
+
+<script src="./pag3.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
